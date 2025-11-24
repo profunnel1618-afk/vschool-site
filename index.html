@@ -17,21 +17,17 @@
     <p>Test the EduSmartBot on this page.</p>
   </main>
 
-<!-- Chatbase widget: compatibility config (define both) -->
+<!-- Chatbase widget -->
 <script>
-  // Newer loader reads this:
-  window.embeddedChatbotConfig = {
-    chatbotId: "Y17P-JRm92JFSkjOcVXc",
-    domain: "https://www.chatbase.co"
-  };
-  // Some versions read this instead:
   window.chatbaseConfig = {
     chatbotId: "Y17P-JRm92JFSkjOcVXc",
-    domain: "www.chatbase.co" // note: without https here for backward compatibility
   };
 </script>
+<script
+  src="https://www.chatbase.co/embed.min.js"
+  defer
+></script>
 <script src="https://www.chatbase.co/embed.min.js" defer></script>
-
 
 </body>
 </html>
